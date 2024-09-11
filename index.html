@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <p class="logo"><span>S</span>hyam</p>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Softwarer Engineer</p>
+            <h1>Hi, I'm <span>Bhuvan Shyam</span><br>Burla From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="shaym.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a motivated software developer with a solid understanding of Python, Html, C and Basic UI/UX. As a recent graduate, I'm eager to apply my skills in real-world projects and continuously learn new technologies. I'm passionate about problem-solving and excited to begin my career in software development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Python</span><br>Python developer</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>National Level Quiz on C programming</span><br>Conducted by Annamacharya Institue Of Science and Technology</li>
+                        <li><span>Cyber Security and Ethical Hacking</span><br>Certified by Rinex in Cyber Security and Ethical Hacking for internship</li>
+                        <li><span>AIML Virtual Internship</span><br>Trained and Certified by Edu skills</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelors Degree(2023)</span><br>Btech from GIST (JNTU)</li>
+                        <li><span>Intermedaite(2019)</span><br>Narayana junior college (Nellore).</li>
+                        <li><span>SSC(2017)</span><br>Ratnam high School (Nellore).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>UI/UX</h2>
+                <p>UI focuses on the visual elements and layout of digital products, ensuring they are visually appealing and intuitive to use. UX  is concerned with the overall feel of the product, aiming to create meaningful and relevant experiences for users by considering their needs, behaviors, and pain points throughout the entire interaction process.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Devolopment</h2>
+                <p>Web development involves creating and maintaining websites and web applications. It encompasses both front-end work and back-end development. Web developers use various programming languages, frameworks, and tools to build responsive, functional, and secure web experiences for users across different devices and platforms.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Python</h2>
+                <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python's extensive standard library and vast ecosystem of third-party packages make it versatile for various applications, from web development and data analysis to artificial intelligence and scientific computing.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="project (1).png">
+                <div class="layer">
+                    <h3>Automatic Smoke Detector</h3>
+                    <p>Automatic smoke detectors sense smoke and sound an alarm to alert occupants of potential fires, allowing for early evacuation. They often connect with other detectors to ensure a coordinated warning throughout a building.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project 2.png">
+                <div class="layer">
+                    <h3>Binary Square Rooter</h3>
+                    <p>A low-power binary square rooter is a compact, energy-efficient circuit designed to compute the square root of binary numbers. It balances minimal power consumption with the precision needed for various digital applications.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project3.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>A portfolio showcases your best work and achievements, offering a snapshot of your skills and experiences. It’s a powerful tool for demonstrating your expertise and potential to potential employers or clients.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> reddyshyam2002@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8688856850</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bhuvan.shyam"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/shyamreddy19"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/shyam_reddy110/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shyam-reddy-0785a9245/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Shyam_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shyam.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK6FFRGxD1gdASIr4BeMRC0KEl2xpK8CDrmGEAQdOQ8tXJc3aPbIiMqGvQSRSaCQIA/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
